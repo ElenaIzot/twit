@@ -7,9 +7,7 @@ export function PostList(props: { posts: Post[] }): JSX.Element {
     const elements = props.posts.map((item: Post, id: number) => {
         return (
             <li className='list-group-item' key={id}>
-                <PostListItem
-                    
-                     />
+                <PostListItem />
             </li>
         )
     });

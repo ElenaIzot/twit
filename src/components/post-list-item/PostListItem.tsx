@@ -28,11 +28,12 @@ export default class PostListItem extends React.Component {
     // }
 
     onImportant(): void {
-        this.setState({ important: !important });
+
+      
     }    // this.setState({ comment: 'Привет' });
 
     onLike(): void {
-        this.setState({like: !like})
+      
     }
 
 
@@ -42,18 +43,18 @@ export default class PostListItem extends React.Component {
 
         let classNames = 'app-list-item d-flex justify-content-between';
 
-        if (this.state.important) {
-            classNames += ' important';
-        }
+        // if (this.state.important) {
+        //     classNames += ' important';
+        // }
 
-        if (this.state.like) {
-            classNames += ' like';
-        }
+        // if (this.state.like) {
+        //     classNames += ' like';
+        // }
 
         return <div className={classNames}>
             <span className='app-list-item-label'
                 onClick={this.onLike}>
-                {this.state.label}
+                Hellloo
             </span>
             <div className='d-flex justify-content-center align-items-center'>
                 <button
