@@ -6,6 +6,7 @@ import { PostList } from './components/post-list/PostList';
 import { PostStatusFilter } from './components/post-status-filter/PostStatusFilter';
 import { SearchPanel } from './components/search-panel/search-panel';
 
+const API_KEY = process.env.REACT_APP_API_KEY;
 export interface Post {
   label: string,
   important: boolean,
@@ -25,7 +26,6 @@ function App() {
       <div className='search-panel d-flex'>
         <SearchPanel />
         <PostStatusFilter />
-        
       </div>
       <PostList posts ={lists} />
       <PostAddForm />
